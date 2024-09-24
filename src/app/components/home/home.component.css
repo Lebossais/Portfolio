@@ -1,0 +1,57 @@
+/* Section Présentation */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/assets/project3.jpg'); /* Remplace avec ton image de fond */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Ajout d'un fond transparent pour que le texte ressorte */
+  border-radius: 8px;
+}
+
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h1 .highlight {
+  color: #00c9ff; /* Couleur vive pour mettre ton nom en évidence */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #00c9ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #00a7d7;
+}
