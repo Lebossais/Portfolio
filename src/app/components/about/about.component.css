@@ -1,4 +1,4 @@
-.about-section {
+/*.about-section {
   padding: 50px 20px;
   background-color: #f9f9f9;
   color: #333;
@@ -51,7 +51,7 @@
 
 /* On test des choses ici */
 
-/*Progression des barres*/
+/*Progression des barres*//*
 @keyframes fillProgress {
   from {
     width: 0;
@@ -61,7 +61,7 @@
   }
 }
 
-/* Effet Fade */
+/* Effet Fade *//*
 .skill {
   opacity: 0;
   transform: translateY(20px);
@@ -71,4 +71,136 @@
 .skill.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Effet Hover *//*
+
+.skill {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Effet couleur dégradés *//*
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+  width: 0;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Background effet *//*
+.about-section {
+  background-image: url('/assets/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+*/
+
+/* Section About */
+.about-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.about-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.about-section p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
+
+/* Timeline Styles */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 900px;
+}
+
+/* Central line */
+.timeline:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #00c9ff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* Timeline Item Styles */
+.timeline-item {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item .content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left and Right positions */
+.timeline-item.left {
+  left: 0;
+  transform: translateX(-100%); /* Hidden off the screen */
+}
+
+.timeline-item.right {
+  left: 50%;
+  transform: translateX(100%); /* Hidden off the screen */
+}
+
+.timeline-item.left .content {
+  text-align: right;
+}
+
+.timeline-item.right .content {
+  text-align: left;
+}
+
+/* When visible, bring items into view */
+.timeline-item.visible.left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-item.visible.right {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  height: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #00c9ff;
+  width: 0;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
 }
