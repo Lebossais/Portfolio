@@ -1,0 +1,30 @@
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 1rem;
+  background-color: #333333;
+  align-items: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li + li:before {
+  content: '';
+  position: absolute;
+  left: -200px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #444;
+}
+
