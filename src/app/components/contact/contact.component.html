@@ -1,6 +1,7 @@
 <section id="contact" class="contact-section">
-  <h1 class="section-title">Contactez-moi</h1>
+  <div class="container">
 
+  <h1 class="section-title">Contactez-moi</h1>
   <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="contact-form">
     <div class="form-group">
       <label for="name">Nom</label>
@@ -34,4 +35,5 @@
     <button type="submit" class="submit-btn" [disabled]="contactForm.invalid">Envoyer</button>
 
   </form>
+  </div>
 </section>

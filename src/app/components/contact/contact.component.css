@@ -1,6 +1,6 @@
 /* Section du formulaire de contact */
 .contact-section {
-  padding: 60px 20px;
+  padding: 50px 20px;
   background-color: #f4f4f4;
   text-align: center;
 }
@@ -19,10 +19,19 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.form-row{
+  display: contents;
 }
 
 .form-group {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group label {
@@ -41,12 +50,27 @@
   box-sizing: border-box;
 }
 
+.form-group input, .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.form-group.subject {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .form-control:focus {
   border-color: #00c9ff;
   outline: none;
 }
 
 .submit-btn {
+  grid-column: span 2;
   background-color: #00c9ff;
   color: white;
   border: none;
@@ -61,12 +85,6 @@
   background-color: #00a7d7;
 }
 
-.submit-btn:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-/* Message d'erreur */
 .error-message {
   color: red;
   font-size: 0.9rem;
