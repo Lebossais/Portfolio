@@ -1,9 +1,12 @@
 import { Component, ElementRef, AfterViewInit, Renderer2  } from '@angular/core';
-
+import * as AOS from 'aos';
+import {NgOptimizedImage} from "@angular/common";
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [
+    NgOptimizedImage
+  ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
@@ -49,6 +52,10 @@ export class AboutComponent {
   */
 
   constructor(private el: ElementRef, private renderer: Renderer2) { }
+
+  ngOnInit() {
+    AOS.init();
+  }
 
   ngAfterViewInit() {
     const timelineItems: NodeListOf<HTMLElement> = this.el.nativeElement.querySelectorAll('.timeline-item');
