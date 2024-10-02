@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('/assets/project3.jpg'); /* Remplace avec ton image de fond */
+  background-image: url('/assets/background.jpg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -14,7 +14,7 @@
 .hero-content {
   max-width: 800px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6); /* Ajout d'un fond transparent pour que le texte ressorte */
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
 }
 
@@ -25,7 +25,7 @@ h1 {
 }
 
 h1 .highlight {
-  color: #00c9ff; /* Couleur vive pour mettre ton nom en évidence */
+  color: #00c9ff;
 }
 
 h2 {
