@@ -1,3 +1,15 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #f4f4f4;
+  z-index: 100;
+  transition: top 0.7s ease-in-out;
+}
+
+.hidden{
+  top: -100px;
+}
 
 nav ul {
   display: flex;
